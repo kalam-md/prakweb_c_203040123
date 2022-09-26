@@ -116,7 +116,7 @@ $buku = query("SELECT * FROM buku LIMIT $halaman_awal, $batas");
             <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
               <a <?php if ($halaman > 1) {
                     echo "href='?halaman=$previous'";
-                  } ?> class="relative inline-flex items-center rounded-l-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20">
+                  } ?> class="relative inline-flex items-center rounded-l-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 hover:border-indigo-500 hover:text-indigo-500">
                 <span class="sr-only">Previous</span>
                 <!-- Heroicon name: mini/chevron-left -->
                 <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -138,7 +138,7 @@ $buku = query("SELECT * FROM buku LIMIT $halaman_awal, $batas");
 
               <a <?php if ($halaman < $total_halaman) {
                     echo "href='?halaman=$next'";
-                  } ?> class="relative inline-flex items-center rounded-r-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20">
+                  } ?> class="relative inline-flex items-center rounded-r-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 hover:border-indigo-500 hover:text-indigo-500">
                 <span class="sr-only">Next</span>
                 <!-- Heroicon name: mini/chevron-right -->
                 <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
