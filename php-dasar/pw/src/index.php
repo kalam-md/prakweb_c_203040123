@@ -10,8 +10,6 @@ $data = query("SELECT * FROM buku");
 $jumlah_data = count($data);
 $total_halaman = ceil($jumlah_data / $batas);
 $halaman_awal = ($batas * $halaman) - $batas;
-// var_dump($halaman_awal);
-// die();
 $buku = query("SELECT * FROM buku LIMIT $halaman_awal, $batas");
 
 ?>

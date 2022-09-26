@@ -9,5 +9,3 @@ function previewImage() {
     imgPreview.src = oFREvent.target.result;
   };
 }
-
-// javascript
