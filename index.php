@@ -18,7 +18,7 @@
 <body>
   <div class="overflow-hidden bg-white shadow sm:rounded-lg max-w-6xl mx-auto mt-10">
     <div class="px-4 py-5 sm:px-6">
-      <h3 class="text-lg font-medium leading-6 text-gray-900">Prakweb C 20304012</h3>
+      <h3 class="text-lg font-medium leading-6 text-gray-900">Praktiku Web C 20304012</h3>
       <p class="mt-1 max-w-2xl text-sm text-gray-500">Mata kuliah pemrograman web 2022</p>
     </div>
     <div class="border-t border-gray-200">
