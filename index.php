@@ -18,7 +18,7 @@
 <body>
   <div class="overflow-hidden bg-white shadow sm:rounded-lg max-w-6xl mx-auto mt-10">
     <div class="px-4 py-5 sm:px-6">
-      <h3 class="text-lg font-medium leading-6 text-gray-900">Praktiku eb C 20304012</h3>
+      <h3 class="text-lg font-medium leading-6 text-gray-900">Praktiku Web C 20304012</h3>
       <p class="mt-1 max-w-2xl text-sm text-gray-500">Mata kuliah pemrograman web 2022</p>
     </div>
     <div class="border-t border-gray-200">
@@ -48,7 +48,7 @@
                   <span class="ml-2 w-0 flex-1 truncate text-gray-500">OOP PHP</span>
                 </div>
                 <div class="ml-4 flex-shrink-0">
-                  <a href="./php-dasar/pw/src/index.php" class="font-medium text-indigo-600 hover:text-indigo-500">Click</a>
+                  <a href="./php-dasar/oop/src/index.php" class="font-medium text-indigo-600 hover:text-indigo-500">Click</a>
                 </div>
               </li>
             </ul>
