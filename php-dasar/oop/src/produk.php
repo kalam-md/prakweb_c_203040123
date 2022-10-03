@@ -35,4 +35,4 @@ $produk4->harga = 200000;
 
 echo "Komik: " . $produk3->getLabel();
 echo "<hr>";
-echo "Komik: " . $produk4->getLabel();;
+echo "Komik: " . $produk4->getLabel();
