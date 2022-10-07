@@ -7,7 +7,7 @@
 
   <div class="row">
     <div class="col-lg-6">
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formModal">
+      <button type="button" class="btn btn-primary tombolTambahData" data-bs-toggle="modal" data-bs-target="#formModal">
         Tambah Data Mahasiswa
       </button>
       <br><br>
@@ -18,6 +18,9 @@
             <?= $mhs['nama']; ?>
             <div class="">
               <a href="<?= BASEURL;  ?>/mahasiswa/detail/<?= $mhs['id']; ?>" class="text-primary badge badge-primary">Detail</a>
+
+              <a href="<?= BASEURL;  ?>/mahasiswa/ubah/<?= $mhs['id']; ?>" class="text-success badge badge-primary tampilModalUbah" data-bs-toggle="modal" data-bs-target="#formModal" data-id="<?= $mhs['id']; ?>">Ubah</a>
+
               <a href="<?= BASEURL; ?>/mahasiswa/hapus/<?= $mhs['id']; ?>" class="text-danger badge badge-danger" onclick="return confirm('yakin?');">Hapus</a>
             </div>
           </li>
@@ -27,11 +30,11 @@
   </div>
 </div>
 
-<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="judulModal" aria-hidden="true">
+<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="judulModal">Tambah Data Mahasiswa</h5>
+        <h5 class="modal-title" id="formModalLabel">Tambah Data Mahasiswa</h5>
         <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
