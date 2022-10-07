@@ -1,16 +1,15 @@
 <div class="container mt-5">
   <div class="row">
-    <div class="col">
+    <div class="col-6">
       <h3 class="">Daftar Mahasiswa</h3>
-
-      <?php foreach ($data['mhs'] as $mhs) : ?>
-        <ul>
-          <li>Nama : <?= $mhs['nama']; ?></li>
-          <li>Nrp : <?= $mhs['nrp']; ?></li>
-          <li>Email : <?= $mhs['email']; ?></li>
-          <li>Jurusan : <?= $mhs['jurusan']; ?></li>
-        </ul>
-      <?php endforeach; ?>
+      <ul class="list-group">
+        <?php foreach ($data['mhs'] as $mhs) : ?>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <?= $mhs['nama']; ?>
+            <a href="<?= BASEURL;  ?>/mahasiswa/detail/<?= $mhs['id']; ?>" class="text-primary badge badge-primary">Detail</a>
+          </li>
+        <?php endforeach; ?>
+      </ul>
     </div>
   </div>
 </div>
