@@ -61,7 +61,7 @@
                   <span class="ml-2 w-0 flex-1 truncate text-gray-500">PHP MVC</span>
                 </div>
                 <div class="ml-4 flex-shrink-0">
-                  <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Click</a>
+                  <a href="./php-dasar/mvc/public/" class="font-medium text-indigo-600 hover:text-indigo-500">Click</a>
                 </div>
               </div>
             </div>

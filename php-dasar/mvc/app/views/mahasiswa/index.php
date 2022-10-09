@@ -7,7 +7,7 @@
 
   <div class="row mb-3">
     <div class="col-lg-6">
-      <button type="button" class="btn btn-primary tombolTambahData" data-bs-toggle="modal" data-bs-target="#formModal">
+      <button type="button" class="btn btn-primary tombolTambahData" data-toggle="modal" data-target="#formModal">
         Tambah Data Mahasiswa
       </button>
     </div>
@@ -34,11 +34,11 @@
           <li class="list-group-item d-flex justify-content-between align-items-center">
             <?= $mhs['nama']; ?>
             <div class="">
-              <a href="<?= BASEURL;  ?>/mahasiswa/detail/<?= $mhs['id']; ?>" class="text-primary badge badge-primary">Detail</a>
+              <a href="<?= BASEURL;  ?>/mahasiswa/detail/<?= $mhs['id']; ?>" class="badge badge-primary">Detail</a>
 
-              <a href="<?= BASEURL;  ?>/mahasiswa/ubah/<?= $mhs['id']; ?>" class="text-success badge badge-primary tampilModalUbah" data-bs-toggle="modal" data-bs-target="#formModal" data-id="<?= $mhs['id']; ?>">Ubah</a>
+              <a href="<?= BASEURL;  ?>/mahasiswa/ubah/<?= $mhs['id']; ?>" class="badge badge-primary tampilModalUbah" data-toggle="modal" data-target="#formModal" data-id="<?= $mhs['id']; ?>">Ubah</a>
 
-              <a href="<?= BASEURL; ?>/mahasiswa/hapus/<?= $mhs['id']; ?>" class="text-danger badge badge-danger" onclick="return confirm('yakin?');">Hapus</a>
+              <a href="<?= BASEURL; ?>/mahasiswa/hapus/<?= $mhs['id']; ?>" class="badge badge-danger" onclick="return confirm('yakin?');">Hapus</a>
             </div>
           </li>
         <?php endforeach; ?>
@@ -52,7 +52,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="formModalLabel">Tambah Data Mahasiswa</h5>
-        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -89,7 +89,7 @@
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="submit" class="btn btn-primary">Tambah Data</button>
         </form>
       </div>
